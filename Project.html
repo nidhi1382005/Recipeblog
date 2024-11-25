@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nidhi's Recipe Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="recipes">
+            <h2>Featured Recipes</h2>
+            <article class="recipe">
+                <h3>White Sauce Pasta</h3>
+                <p>Fresh vegetables sautéed with pasta in a light sauce.</p>
+                <button onclick="toggleRecipeDetails('pastaDetails')">Show Ingredients and Process</button>
+                <div id="pastaDetails" class="details" style="display: none;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>250 gms Pasta</li>
+                        <li>Bell pepper</li>
+                        <li>Zucchini</li>
+                        <li>Olive oil</li>
+                        <li>1 spoon Garlic Ginger paste</li>
+                        <li>2 Tomatoes</li>
+                        <li>2 Onions</li>
+                        <li>Corns</li>
+                        <li>Cheese slice</li>
+                        <li>Basic Masalas: 2 spoons of Salt, 1/2 spoon Red chilli powder,1/4 spoon Black pepper, 2 spoons Cornflour, 1 cup Milk </li>
+                    </ul>
+                    <h4>Procedure:</h4>
+                    <ul>
+                        <li>Take 4 cups of water and boil pasta in a container for 10 min. and add 2 spoons of oil in it.</li>
+                        <li>In a pan add cornflour and stir it until it changes its color to golden-brown and then add milk to it.</li>
+                        <li>Stir it continuously till it's consistency is like a cream.</li>
+                        <li>In another pan add 2 spoons Olive oil sautee vegetables in it.</li>
+                        <li>Add basic masalas,salt, red chilli poweder, black pepper.</li>
+                        <li>Add boiled pasta, corns and the cream prepared earlier.</li>
+                        <li>U can also add cheese slice to make ur pasta more creamy.</li>
+                        </ul>
+                        <b><h3>And ur tasty and creamy pasta is ready to be served.</h3></b>
+                </div>
+            </article>
+
+            <article class="recipe">
+                <h3>Chocolate Cake</h3>
+                <p>A rich and moist chocolate cake perfect for any occasion.</p>
+                <button onclick="toggleRecipeDetails('cakeDetails')">Show Ingredients and Process</button>
+                <div id="cakeDetails" class="details" style="display: none;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>3/4 cup Cocoa powder</li>
+                        <li>1 3/4 Flour</li>
+                        <li>1 1/2 Baking Powder</li>
+                        <li>1 cup Milk</li>
+                        <li>2 Eggs</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>2 cups Sugar</li>
+                        <li>2 Large Eggs</li>
+                        <li>Butter</li>
+                        <li>1/2 cup Vegetable Oil</li>
+                    </ul>
+                    <h4>Procedure:</h4>
+                    <ul>
+                        <li>Preheat the oven to 175 degree Celsius.</li>
+                        <li>Grease the bowl properly with butter and flour two 9-inch round cake pans.</li>
+                        <li>Sift together the flour, cocoa powder, baking powder, baking soda.</li>
+                        <li>In a large bowl, whisk together the sugar, eggs, milk, oil, and vanilla extract until smooth and well combined.</li>
+                        <li>Gradually add the dry ingredients to the wet mixture, stirring just until combined. Stir in the boiling water(the batter eill be thin).</li>
+                        <li>Pour the batter evenly into the prepared pans and bake for 30-35 minutes, or until a toothpick inserted in the center comes out clean.</li>
+                        <li>Cool the cake in the pan for 10 minutes, then transfer it to a wire rack to cool completely.</li>
+                    </ul>
+                        <b><h3>And ur tasty and delecious cake is all ready to serve ur cravings.</h3></b>
+                </div>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a food enthusiast who loves sharing recipes and cooking tips.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Recipe Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
